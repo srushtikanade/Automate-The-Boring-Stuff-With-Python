@@ -10,9 +10,9 @@ def tablePrinter(tableData):
             if len(item) > colWidths[count]:
                 colWidths[count] = len(item)
         count += 1
-    for row in range(len(tableData[0])):
-        for col in range(len(tableData)):
-            print(tableData[col][row].rjust(colWidths[col]),end=' ')
+    for col in range(len(tableData[0])):
+        for row in range(len(tableData)):
+            print(tableData[row][col].rjust(colWidths[row]),end=' ')
         print()
     
         
