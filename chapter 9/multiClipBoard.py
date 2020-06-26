@@ -29,7 +29,7 @@ elif len(sys.argv) == 2 and sys.argv[1].lower() != 'delete_all':
               'has been loaded to the clipboard')
 
 # Clear all shelved entries
-elif len(sys.argv) == 2 and sys.argv[1].lower() == 'delete_all':
+elif len(sys.argv) == 2 and sys.argv[1].lower() == 'deleteAll':
     mcb_shelf.clear()
     print('All keywords and associated contents have been deleted')
 
