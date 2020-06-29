@@ -4,8 +4,8 @@ from openpyxl.styles import Font
 def multiplicationTable(number):
     wb =openpyxl.Workbook()
     sheet=wb.active
-    #sheet.freeze_panes = 'A2'
-    #sheet.freeze_panes = 'B1'
+    sheet.freeze_panes = 'A2'
+    sheet.freeze_panes = 'B1'
     fontObj1 = Font(name='Times New Roman', bold=True)
     for i in range(1,number+1):
         sheet.cell(row=i+1,column=1).value=i
