@@ -13,7 +13,7 @@ for csvFilename in os.listdir('.'):
             if readerObj.line_num>1: # since the header would be in 1st line, after it the data is appended to list
                 csvRows.append(row)
         csvFileObj.close()
-        newcsvFileObj=open(os.path.join('headerRemoved', csvFilename), 'w',newline=")
+        newcsvFileObj=open(os.path.join('headerRemoved', csvFilename), 'w',newline='')
         newcsvWriter = csv.writer(newcsvFileObj)
         for row in csvRows:
                            newcsvWriter.writerow(row)
