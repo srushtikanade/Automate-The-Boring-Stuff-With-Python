@@ -30,7 +30,7 @@ for foldername, subfolders, filenames in os.walk('.'):
         print('There are no photo folders,do you want to find folders with at least a quarter images in it?(yes or no)')
         answer=input()
         if answer=='yes':
-            if numPhotoFiles>numNonPhotoFiles:
+            if numPhotoFiles>(numNonPhotoFiles/2):
                 print(os.path.abspath(foldername))
             else:
                 print('These are files that contain few photos, there are no photofolders here!')
